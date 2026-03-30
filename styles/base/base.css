@@ -1,0 +1,35 @@
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p,
+li,
+a,
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-body);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
