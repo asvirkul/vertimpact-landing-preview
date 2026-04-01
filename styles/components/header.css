@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.875rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   border-bottom: 1px solid var(--color-border-subtle);
   z-index: var(--z-index-header);
  
@@ -32,7 +32,6 @@ header {
   font-weight: 800;
   letter-spacing: -0.001em;
   line-height: 1;
-  white-space: nowrap;
   text-transform: uppercase;
 }
 .header__logo-accent {
@@ -152,4 +151,28 @@ header {
 .header__cta-link:focus-visible .header__cta-icon-wrap {
   border-color: var(--color-cta-quiet-hover-border);
   background-color: var(--color-cta-quiet-hover-bg);
+}
+
+.header__mobile-nav {
+  display: none;
+}
+
+.header_home-link {
+  display: inline-block;
+}
+
+@media all and (max-width:1024px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .header__mobile-nav {
+    display: inline-block;
+  }
 }
