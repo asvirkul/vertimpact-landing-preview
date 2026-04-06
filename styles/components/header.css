@@ -161,7 +161,84 @@ header {
   display: inline-block;
 }
 
+.mobile-menu__wrapper {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  z-index: var(--z-index-header);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+header.mobile-open .mobile-menu__wrapper {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__inner {
+  width: min(100%, 100rem);
+  margin: 0 auto;
+}
+
+.mobile-menu__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 5rem;
+  padding: 0 2.5rem;
+}
+.mobile-menu__list {
+  border-top: 1px solid rgb(var(--color-forest-deep-rgb) / 0.14);
+}
+
+.mobile-menu__item {
+  border-bottom: 1px solid rgb(var(--color-forest-deep-rgb) / 0.14);
+}
+
+.mobile-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 5.6rem;
+  padding: 0 2.5rem;
+  color: var(--color-text);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__burger-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: all 0.2s;
+}
+
+.header__burger.active .header__burger-line--top {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.header__burger.active .header__burger-line--middle {
+  opacity: 0;
+}
+
+.header__burger.active .header__burger-line--bottom {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
 @media all and (max-width:1024px) {
+  .mobile-menu__wrapper {
+    display: block;
+  }
   .header__nav {
     display: none;
   }
@@ -174,5 +251,22 @@ header {
 
   .header__mobile-nav {
     display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu__top,
+  .mobile-menu__link {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .mobile-menu__brand {
+    font-size: 2.2rem;
+  }
+
+  .mobile-menu__link {
+    min-height: 4.8rem;
+    font-size: 1rem;
   }
 }

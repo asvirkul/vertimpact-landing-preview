@@ -22,7 +22,7 @@
       const nextState = !isExpanded;
 
       setMenuState(burger, nextState);
-      header.classList.toggle("is-menu-open", nextState);
+      header.classList.toggle("mobile-open", nextState);
     });
 
     document.addEventListener("keydown", (event) => {
@@ -31,7 +31,7 @@
       }
 
       setMenuState(burger, false);
-      header.classList.remove("is-menu-open");
+      header.classList.remove("mobile-open");
     });
   }
 

@@ -43,11 +43,11 @@
 
             <div class="header__mobile-nav">
                 <button
-                    class="header__burger"
-                    type="button"
-                    aria-label="Toggle navigation menu"
-                    aria-controls="site-navigation"
-                    aria-expanded="false"
+                class="header__burger"
+                type="button"
+                aria-label="Toggle mobile menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
                 >
                     <svg
                         class="header__burger-icon"
@@ -57,11 +57,30 @@
                         aria-hidden="true"
                         focusable="false"
                     >
-                        <path d="M4 7H20" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
-                        <path d="M4 12H20" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
-                        <path d="M4 17H20" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
+                        <path d="M4 7H20" class="header__burger-line header__burger-line--top" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
+                        <path d="M4 12H20" class="header__burger-line header__burger-line--middle"  stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
+                        <path d="M4 17H20" class="header__burger-line header__burger-line--bottom" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
                     </svg>
                 </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu__wrapper" id="mobile-menu">
+            <div class="mobile-menu__inner">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">About</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Services</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Why Vertimpact</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -71,7 +90,7 @@
         <!-- Hero -->
         <section class="hero__wrapper">
             <div class="hero__image-wrapper">
-                <img class="hero__image" src="./assets/images/vertimpact_hero.jpg" alt="City skyline at dusk representing Vertimpact's focus on Africa's green economy.">
+                <img class="hero__image" src="./assets/images/vertimpact_hero.webp" alt="City skyline at dusk representing Vertimpact's focus on Africa's green economy.">
             </div>
             <div class="hero__overlay"></div>
             <div class="hero__text-wrapper">
@@ -90,12 +109,6 @@
         </section>
         <!-- Hero -->
     </main>
-
-    <section class="mobile-menu__wrapper">
-        <nav class="mobile-menu__nav">
-            
-        </nav>
-    </section>
 
     <script src="./js/utils/dom.js"></script>
     <script src="./js/components/header.js"></script>
