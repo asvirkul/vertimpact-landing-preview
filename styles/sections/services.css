@@ -7,13 +7,13 @@
 }
 
 .services__grid {
-    display: grid;
-    grid-template-columns: minmax(0, 0.8fr) minmax(22rem, 1fr);
-    gap: 1rem;
-    max-width: var(--max-width);
-    position: relative;
-    margin: 0 auto;
-    padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(22rem, 1fr);
+  gap: 1rem;
+  max-width: var(--max-width);
+  position: relative;
+  margin: 0 auto;
+  padding-top: 2.5rem;
 }
 
 .services__intro {
@@ -213,10 +213,8 @@
 }
 
 @media (max-width: 640px) {
-
   .services__grid {
     gap: 2.5rem;
     padding-top: 2rem;
   }
-
 }

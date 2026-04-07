@@ -12,14 +12,14 @@ header {
   height: var(--header-height);
 }
 .header__content {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: center;
-    column-gap: clamp(1.5rem, 3vw, 3rem);
-    max-width: var(--max-width);
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: clamp(1.5rem, 3vw, 3rem);
+  max-width: var(--max-width);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 .header__logo {
   justify-self: start;
@@ -37,11 +37,11 @@ header {
 }
 .header__logo-accent {
   color: var(--color-active);
-    text-transform: lowercase;
-    margin: 0 3px 0 2.5px;
-    font-size: 2.1rem;
-    transform: translateY(1px);
-    display: inline-block;
+  text-transform: lowercase;
+  margin: 0 3px 0 2.5px;
+  font-size: 2.1rem;
+  transform: translateY(1px);
+  display: inline-block;
 }
 .header__nav {
   display: flex;
@@ -72,12 +72,12 @@ header {
   transition: color 0.2s ease;
   white-space: nowrap;
 }
- .header__cta-text {
-    display: inline-block;
-    position: relative;
-    display: inline-flex;
- }
-.header__item a::after  {
+.header__cta-text {
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+}
+.header__item a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -102,12 +102,16 @@ header {
   transition: transform var(--transition-dr) ease;
 }
 .header__item a:hover,
-.header__item a:focus-visible,  .header__cta-text:hover,  .header__cta-text:focus-visible {
+.header__item a:focus-visible,
+.header__cta-text:hover,
+.header__cta-text:focus-visible {
   color: var(--color-active);
 }
 
-.header__item a:hover::after, .header__cta-text:hover::after,
-.header__item a:focus-visible::after, .header__cta-text:focus-visible::after {
+.header__item a:hover::after,
+.header__cta-text:hover::after,
+.header__item a:focus-visible::after,
+.header__cta-text:focus-visible::after {
   transform: scaleX(1);
 }
 .header__cta {
@@ -228,7 +232,7 @@ header.mobile-open .mobile-menu__wrapper {
   transform: translateY(-5px) rotate(-45deg);
 }
 
-@media all and (max-width:1024px) {
+@media all and (max-width: 1024px) {
   .mobile-menu__wrapper {
     display: block;
   }

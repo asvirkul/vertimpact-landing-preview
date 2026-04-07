@@ -1,201 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vertimpact Ltd is a specialist advisory and impact investment firm connecting international capital with Africa's green economy.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vertimpact Ltd is a specialist advisory and impact investment firm connecting international capital with Africa's green economy."
+    />
     <title>Vertimpact</title>
-    <link rel="stylesheet" href="./styles/base/reset.css">
-    <link rel="stylesheet" href="./styles/base/tokens.css">
-    <link rel="stylesheet" href="./styles/base/typography.css">
-    <link rel="stylesheet" href="./styles/base/base.css">
-    <link rel="stylesheet" href="./styles/components/header.css">
-    <link rel="stylesheet" href="./styles/sections/hero.css">
-    <link rel="stylesheet" href="./styles/sections/services.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="./styles/base/tokens.css" />
+    <link rel="stylesheet" href="./styles/base/typography.css" />
+    <link rel="stylesheet" href="./styles/base/base.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/sections/hero.css" />
+    <link rel="stylesheet" href="./styles/sections/services.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="header__content">
-            <div class="header__logo">
-                <a href="./" aria-label="Vertimpact home" class="header_home-link">
-                    <span class="header__logo-text">VERT<span class="header__logo-accent">i</span>MPACT</span>
-                </a>
-            </div>
-            <nav class="header__nav" id="site-navigation">
-                <ul class="header__list">
-                    <li class="header__item"><a href="#">About</a></li>
-                    <li class="header__item"><a href="#">Services</a></li>
-                    <li class="header__item"><a href="#">Why Vertimpact</a></li>
-                    <li class="header__item"><a href="#">Contact</a></li>
-                </ul>
-                <div class="header__cta">
-                    <a href="#" class="header__cta-link">
-                        <span class="header__cta-text">Get in Touch</span>
-                        <span class="header__cta-icon-wrap">
-                            <svg class="header__cta-icon" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
-                                <path d="M3 11L11 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                <path d="M5.5 3H11V8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </nav>
-
-            <div class="header__mobile-nav">
-                <button
-                class="header__burger"
-                type="button"
-                aria-label="Toggle mobile menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="./" aria-label="Vertimpact home" class="header_home-link">
+            <span class="header__logo-text"
+              >VERT<span class="header__logo-accent">i</span>MPACT</span
+            >
+          </a>
+        </div>
+        <nav class="header__nav" id="site-navigation">
+          <ul class="header__list">
+            <li class="header__item"><a href="#">About</a></li>
+            <li class="header__item"><a href="#">Services</a></li>
+            <li class="header__item"><a href="#">Why Vertimpact</a></li>
+            <li class="header__item"><a href="#">Contact</a></li>
+          </ul>
+          <div class="header__cta">
+            <a href="#" class="header__cta-link">
+              <span class="header__cta-text">Get in Touch</span>
+              <span class="header__cta-icon-wrap">
+                <svg
+                  class="header__cta-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  aria-hidden="true"
+                  focusable="false"
                 >
-                    <svg
-                        class="header__burger-icon"
-                        width="50"
-                        height="50"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        focusable="false"
-                    >
-                        <path d="M4 7H20" class="header__burger-line header__burger-line--top" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
-                        <path d="M4 12H20" class="header__burger-line header__burger-line--middle"  stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
-                        <path d="M4 17H20" class="header__burger-line header__burger-line--bottom" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" />
-                    </svg>
-                </button>
-            </div>
-        </div>
+                  <path
+                    d="M3 11L11 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5.5 3H11V8.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </nav>
 
-        <div class="mobile-menu__wrapper" id="mobile-menu">
-            <div class="mobile-menu__inner">
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">About</a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Services</a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Why Vertimpact</a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a href="#" class="mobile-menu__link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="header__mobile-nav">
+          <button
+            class="header__burger"
+            type="button"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="header__burger-icon"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M4 7H20"
+                class="header__burger-line header__burger-line--top"
+                stroke="currentColor"
+                stroke-width="0.9"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12H20"
+                class="header__burger-line header__burger-line--middle"
+                stroke="currentColor"
+                stroke-width="0.9"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 17H20"
+                class="header__burger-line header__burger-line--bottom"
+                stroke="currentColor"
+                stroke-width="0.9"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
+
+      <div class="mobile-menu__wrapper" id="mobile-menu">
+        <div class="mobile-menu__inner">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Services</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Why Vertimpact</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- Header -->
 
     <main>
-        <!-- Hero -->
-        <section class="hero__wrapper">
-            <div class="hero__image-wrapper">
-                <img class="hero__image" src="./assets/images/vertimpact_hero.webp" alt="City skyline at dusk representing Vertimpact's focus on Africa's green economy.">
-            </div>
-            <div class="hero__overlay"></div>
-            <div class="hero__text-wrapper">
-                <h1 class="hero__title">Bridging International Capital with Africa's Green Economy</h1>
-                <div class="hero__brand">
-                    <span class="hero__brand-divider" aria-hidden="true"></span>
-                </div>
-                <p class="hero__description">Vertimpact is a specialist advisory firm serving international investors across East Africa and the Indian Ocean rim.</p>
-                <a class="hero__cta" href="#">
-                    <svg class="cta__icon" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
-                        <path d="M5 3L9 7L5 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Get In Touch</span>
-                </a>
-            </div>
-        </section>
-        <!-- Hero -->
+      <!-- Hero -->
+      <section class="hero__wrapper">
+        <div class="hero__image-wrapper">
+          <img
+            class="hero__image"
+            src="./assets/images/vertimpact_hero.webp"
+            alt="City skyline at dusk representing Vertimpact's focus on Africa's green economy."
+          />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__text-wrapper">
+          <h1 class="hero__title">
+            Bridging International Capital with Africa's Green Economy
+          </h1>
+          <div class="hero__brand">
+            <span class="hero__brand-divider" aria-hidden="true"></span>
+          </div>
+          <p class="hero__description">
+            Vertimpact is a specialist advisory firm serving international
+            investors across East Africa and the Indian Ocean rim.
+          </p>
+          <a class="hero__cta" href="#">
+            <svg
+              class="cta__icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 3L9 7L5 11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+      </section>
+      <!-- Hero -->
 
-        <!-- Services -->
-        <section class="services__wrapper">
+      <!-- Services -->
+      <section class="services__wrapper">
         <div class="services__grid">
-            <div class="services__intro">
-            <h2 class="services__title">Advisory Services for Complex Markets</h2>
+          <div class="services__intro">
+            <h2 class="services__title">
+              Advisory Services for Complex Markets
+            </h2>
             <p class="services__description">
-                Every investment context is unique. Vertimpact combines regional expertise, institutional insight, and execution capability to support international investors across African markets — from initial strategy through to long-term value creation.
+              Every investment context is unique. Vertimpact combines regional
+              expertise, institutional insight, and execution capability to
+              support international investors across African markets — from
+              initial strategy through to long-term value creation.
             </p>
 
             <div class="services__intro-graphic" aria-hidden="true">
-                <span class="services__graphic-circle services__graphic-circle--1"></span>
-                <span class="services__graphic-circle services__graphic-circle--2"></span>
-                <span class="services__graphic-circle services__graphic-circle--3"></span>
-                <span class="services__graphic-circle services__graphic-circle--4"></span>
-                <span class="services__graphic-dot"></span>
+              <span
+                class="services__graphic-circle services__graphic-circle--1"
+              ></span>
+              <span
+                class="services__graphic-circle services__graphic-circle--2"
+              ></span>
+              <span
+                class="services__graphic-circle services__graphic-circle--3"
+              ></span>
+              <span
+                class="services__graphic-circle services__graphic-circle--4"
+              ></span>
+              <span class="services__graphic-dot"></span>
             </div>
-            </div>
+          </div>
 
-            <div class="services__content">
-                <article class="services__item">
-                    
-                    <div class="services__item-icon">
-                        <span>
-                        
-                        </span>
-                    </div>
-                    <div class="services__item-body">
-                        <h3 class="services__item-title">Market Entry & Investment Advisory</h3>
-                        <p class="services__item-description">
-                        We support international investors, funds, and corporations entering African markets through rigorous market analysis, partner identification, regulatory navigation, and end-to-end execution support.
-                        </p>
-                    </div>
-                </article>
+          <div class="services__content">
+            <article class="services__item">
+              <div class="services__item-icon">
+                <span> </span>
+              </div>
+              <div class="services__item-body">
+                <h3 class="services__item-title">
+                  Market Entry & Investment Advisory
+                </h3>
+                <p class="services__item-description">
+                  We support international investors, funds, and corporations
+                  entering African markets through rigorous market analysis,
+                  partner identification, regulatory navigation, and end-to-end
+                  execution support.
+                </p>
+              </div>
+            </article>
 
-                <article class="services__item">
-                    <div class="services__item-icon">
-                        <span>
-                            
-                        </span>
-                    </div>
+            <article class="services__item">
+              <div class="services__item-icon">
+                <span> </span>
+              </div>
 
-                    <div class="services__item-body">
-                        <h3 class="services__item-title">ESG & Sustainability Advisory</h3>
-                        <p class="services__item-description">
-                            We help organisations strengthen ESG positioning and align with global standards, delivering sustainability strategies, compliance frameworks, and reporting aligned with investor and stakeholder expectations.
-                        </p>
-                    </div>
-                </article>
+              <div class="services__item-body">
+                <h3 class="services__item-title">
+                  ESG & Sustainability Advisory
+                </h3>
+                <p class="services__item-description">
+                  We help organisations strengthen ESG positioning and align
+                  with global standards, delivering sustainability strategies,
+                  compliance frameworks, and reporting aligned with investor and
+                  stakeholder expectations.
+                </p>
+              </div>
+            </article>
 
-                <article class="services__item">
-                    <div class="services__item-icon">
-                        <span>
-                            
-                        </span>
-                    </div>
-                    <div class="services__item-body">
-                        <h3 class="services__item-title">Impact Investment & DFI Advisory</h3>
-                        <p class="services__item-description">
-                        We provide strategic advisory to impact investors and development finance institutions, including impact measurement design, blended finance structuring, and pipeline development across priority sectors.
-                        </p>
-                    </div>
-                </article>
+            <article class="services__item">
+              <div class="services__item-icon">
+                <span> </span>
+              </div>
+              <div class="services__item-body">
+                <h3 class="services__item-title">
+                  Impact Investment & DFI Advisory
+                </h3>
+                <p class="services__item-description">
+                  We provide strategic advisory to impact investors and
+                  development finance institutions, including impact measurement
+                  design, blended finance structuring, and pipeline development
+                  across priority sectors.
+                </p>
+              </div>
+            </article>
 
-                <article class="services__item">
-                    <div class="services__item-icon">
-                        <span>
-                            
-                        </span>
-                    </div>
-                    <div class="services__item-body">
-                        <h3 class="services__item-title">Clean Energy & Carbon Projects</h3>
-                        <p class="services__item-description">
-                        We support clean energy and carbon market initiatives through market intelligence, project development advisory, and strategic guidance across voluntary carbon markets and nature-based solutions.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
+            <article class="services__item">
+              <div class="services__item-icon">
+                <span> </span>
+              </div>
+              <div class="services__item-body">
+                <h3 class="services__item-title">
+                  Clean Energy & Carbon Projects
+                </h3>
+                <p class="services__item-description">
+                  We support clean energy and carbon market initiatives through
+                  market intelligence, project development advisory, and
+                  strategic guidance across voluntary carbon markets and
+                  nature-based solutions.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-        </section>
-        <!-- Services -->
-
+      </section>
+      <!-- Services -->
     </main>
 
     <script src="./js/utils/dom.js"></script>
     <script src="./js/components/header.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
