@@ -32,20 +32,20 @@
   linear-gradient(
     180deg,
     rgb(0 0 0 / 0.08) 0%,
-    rgb(0 0 0 / 0.1) 30%,
-    rgb(0 0 0 / 0.14) 55%,
-    rgb(0 0 0 / 0.28) 100%
+    rgb(0 0 0 / 0.01) 30%,
+    rgb(0 0 0 / 0.08) 55%,
+    rgb(0 0 0 / 0.08) 100%
   ),
   linear-gradient(
     180deg,
     rgb(var(--color-forest-deep-rgb) / 0.1) 0%,
     rgb(var(--color-forest-deep-rgb) / 0.2) 26%,
-    rgb(var(--color-forest-deep-rgb) / 0.15) 48%,
-    rgb(var(--color-forest-deep-rgb) / 0.44) 100%
+    rgb(var(--color-forest-deep-rgb) / 0.3) 48%,
+    rgb(var(--color-forest-deep-rgb) / 0.6) 100%
   ),
   radial-gradient(
     circle at 50% 38%,
-    rgb(var(--color-coastal-teal-rgb) / 0.14) 0%,
+    rgb(var(--color-coastal-teal-rgb) / 0.2) 0%,
     rgb(var(--color-coastal-teal-rgb) / 0) 32%
   );
 
@@ -85,9 +85,6 @@
     0 8px 20px rgba(14, 31, 25, 0.08);
 }
 
-.hero__brand-part {
-  opacity: 0.8;
-}
 
 .hero__brand-divider {
   position: relative;
@@ -138,8 +135,8 @@
   padding: 0 1.6rem;
   overflow: hidden;
   border: 1px solid rgb(var(--color-white-rgb) / 0.88);
-  border-radius: 0.9rem;
-  background: var(--color-cream-white);
+  border-radius: var(--border-radius-cta);
+  background: var(--color-white);
   color: var(--color-forest-deep);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -175,12 +172,6 @@
   width: 0.85rem;
   height: 0.85rem;
   transition: transform 0.35s ease;
-}
-
-.hero__cta:hover span::after,
-.hero__cta:focus-visible span::after {
-  transform: scaleX(1);
-  color: var(--color-active);
 }
 
 .hero__cta:hover .cta__icon,
