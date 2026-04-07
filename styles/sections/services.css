@@ -146,9 +146,11 @@
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
+  z-index: 1;
+  position: relative;
   line-height: 1;
   border-radius: 50%;
-  background: rgb(var(--color-forest-deep-rgb));
+  background: var(--color-indian-ocean-amber);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
