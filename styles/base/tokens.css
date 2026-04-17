@@ -49,7 +49,8 @@
   --section-padding: 80px;
   --section-side-padding: 1.5rem;
   --title-margin: 40px;
-  --cards-gap: 40px;
+  --cards-gap: 3rem;
+  --column-gap-mobile: 2rem;
   --heading-line-height: 1.2;
   --body-line-height: 1.6;
   --card-margin-title: 1.5rem;
