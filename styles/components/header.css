@@ -23,6 +23,7 @@ header {
 }
 .header__logo {
   justify-self: start;
+  max-width: 250px;
 }
 .header__logo-text {
   display: inline-block;
@@ -100,12 +101,6 @@ header {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform var(--transition-dr) ease;
-}
-.header__item a:hover,
-.header__item a:focus-visible,
-.header__cta-text:hover,
-.header__cta-text:focus-visible {
-  color: var(--color-active);
 }
 
 .header__item a:hover::after,
@@ -209,6 +204,11 @@ header.mobile-open .mobile-menu__wrapper {
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
+}
+
+.header__burger {
+  padding: unset;
+  margin-right: -5.5px;
 }
 
 .header__burger-line {
