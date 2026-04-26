@@ -1,13 +1,53 @@
 (function (window, document) {
-  const selectors = {
-    header: "header",
-    burger: ".header__burger",
+    const selectors = {
+      header: "header",
+      burger: ".header__burger",
+      navLinks: 'a[href^="#"]',
   };
 
   function setMenuState(button, isExpanded) {
     button.setAttribute("aria-expanded", String(isExpanded));
     button.classList.toggle("active", isExpanded);
   }
+
+  function initAnchorNavigation(header, burger) {
+  const links = document.querySelectorAll(selectors.navLinks);
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+
+      if (!href || href === "#") {
+        return;
+      }
+
+      const target = document.querySelector(href);
+
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const headerHeight = header.offsetHeight || 0;
+      const targetTop =
+        target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+      window.scrollTo({
+        top: targetTop,
+        behavior: "smooth",
+      });
+
+      history.pushState(null, "", href);
+
+      if (burger) {
+        setMenuState(burger, false);
+      }
+
+      header.classList.remove("mobile-open");
+    });
+  });
+}
 
   function initHeaderMenu() {
     const header = document.querySelector(selectors.header);
@@ -33,7 +73,40 @@
       setMenuState(burger, false);
       header.classList.remove("mobile-open");
     });
+
+    initAnchorNavigation(header, burger);
   }
+
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll('.header__item a[href^="#"]');
+
+  function setActiveLink() {
+    const headerHeight = document.querySelector("header")?.offsetHeight || 0;
+    const scrollPosition = window.scrollY + headerHeight + 40;
+
+    let currentSectionId = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionTop + sectionHeight
+      ) {
+        currentSectionId = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      const linkId = link.getAttribute("href").slice(1);
+      link.classList.toggle("active-section", linkId === currentSectionId);
+    });
+  }
+
+  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("load", setActiveLink);
+
 
   window.Vertimpact = window.Vertimpact || {};
   window.Vertimpact.header = {

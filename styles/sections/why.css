@@ -9,10 +9,6 @@
   margin: 0 auto;
 }
 
-.why__intro {
-  margin-bottom: 3rem;
-}
-
 .why__waves {
   position: absolute;
   top: -6rem;
@@ -148,7 +144,6 @@
   }
 
   .why__item:nth-child(3) {
-    padding: 2rem;
     margin-top: unset;
     width: 100%;
     padding: 2rem 5rem 2rem 2rem;
@@ -186,7 +181,6 @@
     padding: 2rem;
     margin-top: unset;
     width: 100%;
-    padding: 2rem;
   }
 
   .why__title-wrapper {

@@ -50,6 +50,7 @@
   width: min(100%, 58rem);
   height: 44rem;
   pointer-events: none;
+  opacity: 0.5;
 }
 
 .services__graphic-circle {
@@ -211,6 +212,9 @@
   .services__graphic-circle {
     height: 80%;
     width: 100rem;
+  }
+  .services__item-description {
+    font-weight: 300;
   }
 }
 

@@ -7,7 +7,15 @@
   --color-warm-off-white: #f5f5f0;
   --color-warm-off-white-rgb: 245 245 240;
   --color-indian-ocean-amber: #c75b3a;
+  --color-seychelles: var(--color-indian-ocean-amber);
   --color-cream-white: #f7f3eb;
+  --color-east-africa: #324c3f;
+  --color-europe: #496c58;
+  --color-north-america: #7db595;
+  --color-southern-africa: var(--color-moss-green);
+  --color-australia: #9fcaad;
+  --color-mauritius: #ff4f19;
+
   --color-cream-white-rgb: 247 243 235;
 
   --color-bg: var(--color-white);
@@ -54,6 +62,7 @@
   --heading-line-height: 1.2;
   --body-line-height: 1.6;
   --card-margin-title: 1.5rem;
+  --color-moss-green: #3f7d61;
   --border-radius-cta: 0.9rem;
 
   --transition-dr: 0.2s;
@@ -66,4 +75,5 @@
   --hero-heading: 4rem;
 
   --max-width: 1200px;
+  --footer-sub: #9cada1;
 }

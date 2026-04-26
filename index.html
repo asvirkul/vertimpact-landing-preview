@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="./styles/base/base.css" />
     <link rel="stylesheet" href="./styles/components/header.css" />
     <link rel="stylesheet" href="./styles/sections/hero.css" />
+    <link rel="stylesheet" href="./styles/sections/about.css" />
     <link rel="stylesheet" href="./styles/sections/services.css" />
     <link rel="stylesheet" href="./styles/sections/why.css" />
+    <link rel="stylesheet" href="./styles/sections/clients.css" />
+    <link rel="stylesheet" href="./styles/sections/contact.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
   </head>
   <body>
     <!-- Header -->
@@ -23,18 +27,19 @@
       <div class="header__content">
         <div class="header__logo">
           <a href="./" aria-label="Vertimpact home" class="header_home-link">
-            <img src="./assets/images/logo.png" alt="vertimpact logo">
+            <img src="./assets/images/logo.png" alt="vertimpact logo" />
           </a>
         </div>
         <nav class="header__nav" id="site-navigation">
           <ul class="header__list">
-            <li class="header__item"><a href="#">About</a></li>
-            <li class="header__item"><a href="#">Services</a></li>
-            <li class="header__item"><a href="#">Why Vertimpact</a></li>
-            <li class="header__item"><a href="#">Contact</a></li>
+            <li class="header__item"><a href="#about">About</a></li>
+            <li class="header__item"><a href="#services">Services</a></li>
+            <li class="header__item"><a href="#why">Why Vertimpact</a></li>
+            <li class="header__item"><a href="#clients">Clients</a></li>
+            <li class="header__item"><a href="#contact">Contact</a></li>
           </ul>
           <div class="header__cta">
-            <a href="#" class="header__cta-link">
+            <a href="mailto:info@vertimpact.org " class="header__cta-link">
               <span class="header__cta-text">Get in Touch</span>
               <span class="header__cta-icon-wrap">
                 <svg
@@ -112,16 +117,19 @@
         <div class="mobile-menu__inner">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">About</a>
+              <a href="#about" class="mobile-menu__link">About</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Services</a>
+              <a href="#clients" class="mobile-menu__link">Services</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Why Vertimpact</a>
+              <a href="#services" class="mobile-menu__link">Services</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link">Contact</a>
+              <a href="#why" class="mobile-menu__link">Why Vertimpact</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#contact" class="mobile-menu__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -164,7 +172,7 @@
                 d="M5 3L9 7L5 11"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="1.8"
+                stroke-width="1.4"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
@@ -175,8 +183,120 @@
       </section>
       <!-- Hero -->
 
+      <section class="about" id="about">
+        <div class="about__grid">
+          <div class="about__intro">
+            <h2 class="about__title">
+              An African firm built for international mandates
+            </h2>
+
+            <p class="about__description">
+              Vertimpact is a specialist advisory firm serving international
+              investors, funds, and institutions deploying capital across East
+              Africa and the Indian Ocean rim.
+            </p>
+
+            <div class="about__focus">
+              <div class="about__focus-head">
+                <span class="about__focus-label">Geographic focus</span>
+              </div>
+
+              <p class="about__focus-text">
+                East Africa and the Indian Ocean rim — a region of rapid
+                economic integration, significant natural capital, and growing
+                institutional investor interest.
+              </p>
+            </div>
+
+            <div class="about__territory">
+              <span class="about__territory-label">Operational Geography</span>
+
+              <ul class="about__territory-list">
+                <li
+                  class="about__territory-item about__territory-item--east-africa"
+                >
+                  East Africa
+                </li>
+                <li
+                  class="about__territory-item about__territory-item--south-africa"
+                >
+                  Southern Africa
+                </li>
+                <li class="about__territory-item about__territory-item--europe">
+                  Europe
+                </li>
+                <li
+                  class="about__territory-item about__territory-item--north-america"
+                >
+                  North America
+                </li>
+                <li
+                  class="about__territory-item about__territory-item--australia"
+                >
+                  Australia
+                </li>
+                <li
+                  class="about__territory-item about__territory-item--seychelles"
+                >
+                  Seychelles
+                </li>
+                <li
+                  class="about__territory-item about__territory-item--mauritius"
+                >
+                  Mauritius
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about__cards">
+            <article class="about__card">
+              <div class="about__card-inner">
+                <div class="about__card-head">
+                  <span class="about__card-kicker">Mandate &amp; origin</span>
+                </div>
+
+                <h3 class="about__card-title">
+                  Founded where capital meets Africa's green economy
+                </h3>
+
+                <p class="about__card-text">
+                  At the convergence of private capital flows, tightening ESG
+                  expectations, and a persistent absence of credible
+                  on-the-ground advisory capacity. The firm exists to close that
+                  gap with rigour, not rhetoric.
+                </p>
+
+                <span class="about__card-number" aria-hidden="true">01</span>
+              </div>
+            </article>
+
+            <article class="about__card">
+              <div class="about__card-inner">
+                <div class="about__card-head">
+                  <span class="about__card-kicker">Positioning</span>
+                </div>
+
+                <h3 class="about__card-title">
+                  Neither local nor at arm's length
+                </h3>
+
+                <p class="about__card-text">
+                  Principal-led, lean by design, internationally credible by
+                  formation. Neither a local firm scaling globally, nor a
+                  Western firm at arm's length — built for markets that reward
+                  proximity and penalise detachment.
+                </p>
+
+                <span class="about__card-number" aria-hidden="true">02</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <!-- Services -->
-      <section class="services__wrapper">
+      <section class="services__wrapper" id="services">
         <div class="services__grid">
           <div class="services__intro">
             <h2 class="services__title">
@@ -281,143 +401,564 @@
       <!-- Services -->
 
       <!-- Why Vertimpact -->
-      <section class="why__wrapper">
+      <section class="why__wrapper" id="why">
         <div class="why__inner">
           <div class="why__intro">
             <div class="why__title-wrapper">
               <h2 class="why__title">
-                An <span>African</span><br /> partner built for<br /> international clients
+                An <span>African</span><br />
+                partner built for<br />
+                international clients
               </h2>
               <div class="why__waves" aria-hidden="true">
-              <svg 
-                class="why__waves-svg show-desk-tablet"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 67.69 46.21"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g>
-                  <polygon
-                    fill="#426852"
-                    points="22.56 26.57 11.28 36.03 0 26.57 0 36.25 11.28 45.69 11.28 45.72 22.56 36.25 22.56 26.57"
-                  />
-                  <polygon
-                    fill="#426852"
-                    points="45.12 26.57 33.84 36.03 22.56 26.57 22.56 36.25 33.84 45.69 33.84 45.72 45.12 36.25 45.12 26.57"
-                  />
-                  <polygon
-                    fill="#426852"
-                    points="67.69 26.57 56.41 36.03 45.12 26.57 45.12 36.25 56.41 45.69 56.41 45.72 67.69 36.25 67.69 26.57"
-                  />
+                <svg
+                  class="why__waves-svg show-desk-tablet"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 67.69 46.21"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g>
+                    <polygon
+                      fill="#426852"
+                      points="22.56 26.57 11.28 36.03 0 26.57 0 36.25 11.28 45.69 11.28 45.72 22.56 36.25 22.56 26.57"
+                    />
+                    <polygon
+                      fill="#426852"
+                      points="45.12 26.57 33.84 36.03 22.56 26.57 22.56 36.25 33.84 45.69 33.84 45.72 45.12 36.25 45.12 26.57"
+                    />
+                    <polygon
+                      fill="#426852"
+                      points="67.69 26.57 56.41 36.03 45.12 26.57 45.12 36.25 56.41 45.69 56.41 45.72 67.69 36.25 67.69 26.57"
+                    />
 
-                  <polygon
-                    fill="#76b48b"
-                    points="0 19.15 11.28 9.68 22.56 19.15 22.56 9.47 11.28 0.02 0 9.47 0 19.15"
-                  />
-                  <polygon
-                    fill="#76b48b"
-                    points="22.56 19.15 33.84 9.68 45.12 19.15 45.12 9.47 33.84 0.02 22.56 9.47 22.56 19.15"
-                  />
-                  <polygon
-                    fill="#76b48b"
-                    points="45.12 19.15 56.41 9.68 67.69 19.15 67.69 9.47 56.41 0.02 45.12 9.47 45.12 19.15"
-                  />
+                    <polygon
+                      fill="#76b48b"
+                      points="0 19.15 11.28 9.68 22.56 19.15 22.56 9.47 11.28 0.02 0 9.47 0 19.15"
+                    />
+                    <polygon
+                      fill="#76b48b"
+                      points="22.56 19.15 33.84 9.68 45.12 19.15 45.12 9.47 33.84 0.02 22.56 9.47 22.56 19.15"
+                    />
+                    <polygon
+                      fill="#76b48b"
+                      points="45.12 19.15 56.41 9.68 67.69 19.15 67.69 9.47 56.41 0.02 45.12 9.47 45.12 19.15"
+                    />
 
-                  <polygon
-                    fill="#2a4234"
-                    points="22.56 9.57 11.28 19.04 0 9.57 0 19.25 11.28 28.7 11.28 28.72 22.56 19.25 22.56 9.57"
-                  />
-                  <polygon
-                    fill="#2a4234"
-                    points="45.12 9.57 33.84 19.04 22.56 9.57 22.56 19.25 33.84 28.7 33.84 28.72 45.12 19.25 45.12 9.57"
-                  />
-                  <polygon
-                    fill="#2a4234"
-                    points="67.69 9.57 56.41 19.04 45.12 9.57 45.12 19.25 56.41 28.7 56.41 28.72 67.69 19.25 67.69 9.57"
-                  />
-                </g>
-              </svg>
+                    <polygon
+                      fill="#2a4234"
+                      points="22.56 9.57 11.28 19.04 0 9.57 0 19.25 11.28 28.7 11.28 28.72 22.56 19.25 22.56 9.57"
+                    />
+                    <polygon
+                      fill="#2a4234"
+                      points="45.12 9.57 33.84 19.04 22.56 9.57 22.56 19.25 33.84 28.7 33.84 28.72 45.12 19.25 45.12 9.57"
+                    />
+                    <polygon
+                      fill="#2a4234"
+                      points="67.69 9.57 56.41 19.04 45.12 9.57 45.12 19.25 56.41 28.7 56.41 28.72 67.69 19.25 67.69 9.57"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="why__content">
-            <article class="why__item">
-              <h3 class="why__item-title">Access</h3>
-              <p class="why__item-description">
-                Curated deal flow, vetted local partners, and on-the-ground market intelligence not accessible to international investors operating at arm’s length.
-              </p>
-            </article>
+            <div class="why__content">
+              <article class="why__item">
+                <h3 class="why__item-title">Access</h3>
+                <p class="why__item-description">
+                  Curated deal flow, vetted local partners, and on-the-ground
+                  market intelligence not accessible to international investors
+                  operating at arm’s length.
+                </p>
+              </article>
 
-            <article class="why__item">
-              <h3 class="why__item-title">De-risking</h3>
-              <p class="why__item-description">
-                Regulatory, ESG, operational, and reputational risk mitigation for international companies and funds entering or operating in African markets.
-              </p>
-            </article> 
+              <article class="why__item">
+                <h3 class="why__item-title">De-risking</h3>
+                <p class="why__item-description">
+                  Regulatory, ESG, operational, and reputational risk mitigation
+                  for international companies and funds entering or operating in
+                  African markets.
+                </p>
+              </article>
 
-            <article class="why__item">
-              <h3 class="why__item-title">Credibility</h3>
-              <p class="why__item-description">
-                An African-anchored advisory partner ensuring your strategy is credible, accountable, and defensible to boards, LPs, and regulators.
-              </p>
-            </article>
+              <article class="why__item">
+                <h3 class="why__item-title">Credibility</h3>
+                <p class="why__item-description">
+                  An African-anchored advisory partner ensuring your strategy is
+                  credible, accountable, and defensible to boards, LPs, and
+                  regulators.
+                </p>
+              </article>
 
-            <div class="why__waves" aria-hidden="true">
-              <svg 
-                class="why__waves-svg hide-tablet"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 67.69 46.21"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <g>
-                  <polygon
-                    fill="#426852"
-                    points="22.56 26.57 11.28 36.03 0 26.57 0 36.25 11.28 45.69 11.28 45.72 22.56 36.25 22.56 26.57"
-                  />
-                  <polygon
-                    fill="#426852"
-                    points="45.12 26.57 33.84 36.03 22.56 26.57 22.56 36.25 33.84 45.69 33.84 45.72 45.12 36.25 45.12 26.57"
-                  />
-                  <polygon
-                    fill="#426852"
-                    points="67.69 26.57 56.41 36.03 45.12 26.57 45.12 36.25 56.41 45.69 56.41 45.72 67.69 36.25 67.69 26.57"
-                  />
+              <div class="why__waves" aria-hidden="true">
+                <svg
+                  class="why__waves-svg hide-tablet"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 67.69 46.21"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <g>
+                    <polygon
+                      fill="#426852"
+                      points="22.56 26.57 11.28 36.03 0 26.57 0 36.25 11.28 45.69 11.28 45.72 22.56 36.25 22.56 26.57"
+                    />
+                    <polygon
+                      fill="#426852"
+                      points="45.12 26.57 33.84 36.03 22.56 26.57 22.56 36.25 33.84 45.69 33.84 45.72 45.12 36.25 45.12 26.57"
+                    />
+                    <polygon
+                      fill="#426852"
+                      points="67.69 26.57 56.41 36.03 45.12 26.57 45.12 36.25 56.41 45.69 56.41 45.72 67.69 36.25 67.69 26.57"
+                    />
 
-                  <polygon
-                    fill="#76b48b"
-                    points="0 19.15 11.28 9.68 22.56 19.15 22.56 9.47 11.28 0.02 0 9.47 0 19.15"
-                  />
-                  <polygon
-                    fill="#76b48b"
-                    points="22.56 19.15 33.84 9.68 45.12 19.15 45.12 9.47 33.84 0.02 22.56 9.47 22.56 19.15"
-                  />
-                  <polygon
-                    fill="#76b48b"
-                    points="45.12 19.15 56.41 9.68 67.69 19.15 67.69 9.47 56.41 0.02 45.12 9.47 45.12 19.15"
-                  />
+                    <polygon
+                      fill="#76b48b"
+                      points="0 19.15 11.28 9.68 22.56 19.15 22.56 9.47 11.28 0.02 0 9.47 0 19.15"
+                    />
+                    <polygon
+                      fill="#76b48b"
+                      points="22.56 19.15 33.84 9.68 45.12 19.15 45.12 9.47 33.84 0.02 22.56 9.47 22.56 19.15"
+                    />
+                    <polygon
+                      fill="#76b48b"
+                      points="45.12 19.15 56.41 9.68 67.69 19.15 67.69 9.47 56.41 0.02 45.12 9.47 45.12 19.15"
+                    />
 
-                  <polygon
-                    fill="#2a4234"
-                    points="22.56 9.57 11.28 19.04 0 9.57 0 19.25 11.28 28.7 11.28 28.72 22.56 19.25 22.56 9.57"
-                  />
-                  <polygon
-                    fill="#2a4234"
-                    points="45.12 9.57 33.84 19.04 22.56 9.57 22.56 19.25 33.84 28.7 33.84 28.72 45.12 19.25 45.12 9.57"
-                  />
-                  <polygon
-                    fill="#2a4234"
-                    points="67.69 9.57 56.41 19.04 45.12 9.57 45.12 19.25 56.41 28.7 56.41 28.72 67.69 19.25 67.69 9.57"
-                  />
-                </g>
-              </svg>
+                    <polygon
+                      fill="#2a4234"
+                      points="22.56 9.57 11.28 19.04 0 9.57 0 19.25 11.28 28.7 11.28 28.72 22.56 19.25 22.56 9.57"
+                    />
+                    <polygon
+                      fill="#2a4234"
+                      points="45.12 9.57 33.84 19.04 22.56 9.57 22.56 19.25 33.84 28.7 33.84 28.72 45.12 19.25 45.12 9.57"
+                    />
+                    <polygon
+                      fill="#2a4234"
+                      points="67.69 9.57 56.41 19.04 45.12 9.57 45.12 19.25 56.41 28.7 56.41 28.72 67.69 19.25 67.69 9.57"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Why Vertimpact -->
 
+      <!-- Clients -->
+      <section class="clients" id="clients">
+        <div class="clients__container">
+          <div class="clients__intro">
+            <h2 class="clients__title">
+              Our clients are international institutions
+            </h2>
+
+            <div class="clients__sub-wrapper">
+              <h2 class="clients__sub">Capital that moves with purpose</h2>
+              <p class="clients__description">
+                We partner with a select group of international institutions
+                deploying capital across East Africa and the Indian Ocean
+                region.
+              </p>
+            </div>
+          </div>
+
+          <div class="clients__table">
+            <div class="clients__table-head" aria-hidden="true">
+              <span class="clients__head-cell">Client</span>
+              <span class="clients__head-cell">What they seek</span>
+              <span class="clients__head-cell">Geography</span>
+            </div>
+
+            <article class="clients__row">
+              <h3 class="clients__client-type">Corporates</h3>
+
+              <p class="clients__client-description">
+                European, North American, and Australian companies seeking
+                African market entry in green economy sectors.
+              </p>
+
+              <ul class="clients__geography-list">
+                <li>Europe</li>
+                <li>North America</li>
+                <li>Australia</li>
+              </ul>
+            </article>
+
+            <article class="clients__row">
+              <h3 class="clients__client-type">PE &amp; Impact Funds</h3>
+
+              <p class="clients__client-description">
+                Deal origination, ESG due diligence, and impact reporting
+                support across African markets.
+              </p>
+
+              <ul class="clients__geography-list">
+                <li>Europe</li>
+                <li>North America</li>
+                <li>East Africa</li>
+              </ul>
+            </article>
+
+            <article class="clients__row">
+              <h3 class="clients__client-type">DFIs &amp; Multilaterals</h3>
+
+              <p class="clients__client-description">
+                Advisory on African portfolios, impact measurement frameworks,
+                and blended finance structuring.
+              </p>
+
+              <ul class="clients__geography-list">
+                <li>Europe</li>
+                <li>North America</li>
+                <li>East Africa</li>
+              </ul>
+            </article>
+
+            <article class="clients__row">
+              <h3 class="clients__client-type">Commercial Banks</h3>
+
+              <p class="clients__client-description">
+                Sustainable finance strategy and green lending programme
+                development across African markets.
+              </p>
+
+              <ul class="clients__geography-list">
+                <li>Europe</li>
+                <li>East Africa</li>
+                <li>Southern Africa</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="clients__territory">
+          <div class="clients__territory-head">
+            <span class="clients__territory-kicker">Operational geography</span>
+          </div>
+
+          <div class="clients__territory-map">
+            <div class="clients__territory-map-frame">
+              <img
+                class="clients__territory-map-image"
+                src="./assets/images/world-map.png"
+                alt="Operational territory map"
+              />
+            </div>
+          </div>
+
+          <div
+            class="clients__territory-legend"
+            aria-label="Operational territory legend"
+          >
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--east-africa"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title">East Africa</span>
+                <span class="clients__territory-legend-text"
+                  >East African Community</span
+                >
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--europe"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title">Europe</span>
+                <span class="clients__territory-legend-text"
+                  >European Union</span
+                >
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--north-america"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title"
+                  >North America</span
+                >
+                <span class="clients__territory-legend-text">USA · Canada</span>
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--southern-africa"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title"
+                  >Southern Africa</span
+                >
+                <span class="clients__territory-legend-text">South Africa</span>
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--australia"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title">Australia</span>
+                <span class="clients__territory-legend-text">Australia</span>
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--seychelles"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title">Seychelles</span>
+                <span class="clients__territory-legend-text"
+                  >Eden Island · Registered office</span
+                >
+              </div>
+            </div>
+
+            <div class="clients__territory-legend-item">
+              <span
+                class="clients__territory-legend-dot clients__territory-legend-dot--mauritius"
+                aria-hidden="true"
+              ></span>
+              <div class="clients__territory-legend-copy">
+                <span class="clients__territory-legend-title">Mauritius</span>
+                <span class="clients__territory-legend-text">Port Louis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients -->
+
+      <!-- Contact  -->
+      <section class="contact__wrapper" id="contact">
+        <div class="contact__inner">
+          <div class="contact__title-wrapper">
+            <div class="contact__title-inner">
+              <h2 class="contact__title">
+                Every mandate begins with a conversation
+              </h2>
+
+              <p class="contact__description">
+                We partner with institutions that move capital with purpose. If
+                that describes your mandate, we'd welcome a conversation.
+              </p>
+            </div>
+            <div class="contact__details">
+              <div class="contact__detail-item">
+                <span class="contact__detail-label">Direct email</span>
+                <a
+                  class="contact__detail-link"
+                  href="mailto:hello@vertimpact.com"
+                >
+                  info@vertimpact.org
+                </a>
+              </div>
+
+              <div class="contact__detail-item">
+                <span class="contact__detail-label">Registered office</span>
+                <p class="contact__detail-text">
+                  <span
+                    >F20, 1st Floor <br />
+                    Eden Plaza, Eden Island, Seychelles</span
+                  >
+                </p>
+              </div>
+
+              <div class="contact__detail-item">
+                <span class="contact__detail-label">Response time</span>
+                <p class="contact__detail-text">Within two business days</p>
+              </div>
+
+              <div class="contact__detail-item">
+                <span class="contact__detail-label">Business hours</span>
+                <p class="contact__detail-text">Seychelles Time (UTC+04:00)</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" action="#" method="post">
+            <div class="contact__grid">
+              <div class="contact__field">
+                <label class="contact__label" for="contact-name">Name</label>
+                <input
+                  class="contact__input"
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="contact__field">
+                <label class="contact__label" for="contact-organisation"
+                  >Organisation</label
+                >
+                <input
+                  class="contact__input"
+                  id="contact-organisation"
+                  name="organisation"
+                  type="text"
+                  autocomplete="organization"
+                />
+              </div>
+
+              <div class="contact__field contact__field--full">
+                <label class="contact__label" for="contact-email">Email</label>
+                <input
+                  class="contact__input"
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="contact__field contact__field--full">
+                <label class="contact__label" for="contact-message"
+                  >Message</label
+                >
+                <textarea
+                  class="contact__textarea"
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="contact__actions">
+              <button class="contact__submit" type="submit">
+                <svg
+                  class="cta__icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M5 3L9 7L5 11"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Send message
+              </button>
+            </div>
+          </form>
+          <div class="services__intro-graphic" aria-hidden="true">
+            <span
+              class="services__graphic-circle services__graphic-circle--1"
+            ></span>
+            <span
+              class="services__graphic-circle services__graphic-circle--2"
+            ></span>
+            <span
+              class="services__graphic-circle services__graphic-circle--3"
+            ></span>
+            <span
+              class="services__graphic-circle services__graphic-circle--4"
+            ></span>
+            <span class="services__graphic-dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
     </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="footer__logo" href="/" aria-label="Vertimpact home">
+              <span class="footer__logo-wordmark">Vertimpact</span>
+            </a>
+
+            <p class="footer__brand-text">
+              Advisory &amp; Impact Investment Services
+            </p>
+          </div>
+
+          <div class="footer__mandate">
+            <div class="footer__mandate-rings" aria-hidden="true">
+              <span class="footer__mandate-ring footer__mandate-ring--1"></span>
+              <span class="footer__mandate-ring footer__mandate-ring--2"></span>
+              <span class="footer__mandate-ring footer__mandate-ring--3"></span>
+              <span class="footer__mandate-ring footer__mandate-ring--4"></span>
+            </div>
+            <span class="footer__kicker">Our mandate</span>
+            <p class="footer__mandate-text">
+              Bridging international capital and Africa's green economy from
+              East Africa to the Indian Ocean rim.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__middle">
+          <div class="footer__column">
+            <span class="footer__kicker">Contact</span>
+            <a class="footer__contact-link" href="mailto:info@vertimpact.org">
+              info@vertimpact.org
+            </a>
+          </div>
+
+          <div class="footer__column">
+            <span class="footer__kicker">Services</span>
+            <ul class="footer__list">
+              <li>Market Entry &amp; Investment Advisory</li>
+              <li>ESG &amp; Sustainability Advisory</li>
+              <li>Impact Investment &amp; DFI Advisory</li>
+              <li>Clean Energy &amp; Carbon Projects</li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <span class="footer__kicker">Where We Operate</span>
+            <ul class="footer__list">
+              <li>East African Community</li>
+              <li>South Africa</li>
+              <li>Europe</li>
+              <li>North America</li>
+              <li>Australia</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__meta">
+            <span>Vertimpact Ltd · IBC · Republic of Seychelles</span>
+          </div>
+
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Policy</a>
+          </nav>
+
+          <div class="footer__copyright">
+            <span>&copy; 2026 Vertimpact Ltd. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/utils/dom.js"></script>
     <script src="./js/components/header.js"></script>

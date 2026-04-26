@@ -76,7 +76,6 @@ header {
 .header__cta-text {
   display: inline-block;
   position: relative;
-  display: inline-flex;
 }
 .header__item a::after {
   content: "";
@@ -101,6 +100,18 @@ header {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform var(--transition-dr) ease;
+}
+
+a.active-section {
+  color: var(--color-active);
+}
+
+.header__item a:hover {
+  color: var(--color-active);
+}
+
+.active-section::after {
+  transform: scaleX(1) !important;
 }
 
 .header__item a:hover::after,
@@ -261,5 +272,14 @@ header.mobile-open .mobile-menu__wrapper {
   .mobile-menu__link {
     min-height: 4.8rem;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__logo {
+    max-width: 200px;
+  }
+  .hero__brand-divider {
+    height: 5rem;
   }
 }
