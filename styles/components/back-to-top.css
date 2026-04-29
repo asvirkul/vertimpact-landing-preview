@@ -1,54 +1,42 @@
 .button-back__wrapper {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  z-index: var(--z-index-max);
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
   background: var(--color-forest-deep);
-  transition: border-color 0.2s;
-  position: fixed;
-  bottom: 10%;
-  right: 10%;
-  z-index: var(--z-index-max);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition:
+    opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0.3s,
+    border-color 0.2s ease;
+}
+
+.button-back__wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0s,
+    border-color 0.2s ease;
 }
 
 .button-back__wrapper svg {
   width: 23px;
-}
-
-.button-back__wrapper.hidden {
-  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.button-back__wrapper.visible {
-  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(12px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(12px);
-    opacity: 0;
-  }
 }
 
 @media (min-width: 768px) {
