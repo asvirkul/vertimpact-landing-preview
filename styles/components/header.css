@@ -102,7 +102,7 @@ header {
   transition: transform var(--transition-dr) ease;
 }
 
-a.active-section {
+.header__item a.active-section {
   color: var(--color-active);
 }
 
@@ -114,12 +114,6 @@ a.active-section {
   transform: scaleX(1) !important;
 }
 
-.header__item a:hover::after,
-.header__cta-text:hover::after,
-.header__item a:focus-visible::after,
-.header__cta-text:focus-visible::after {
-  transform: scaleX(1);
-}
 .header__cta {
   flex-shrink: 0;
 }

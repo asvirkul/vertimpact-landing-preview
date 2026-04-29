@@ -5,8 +5,8 @@
   color: var(--color-text);
 }
 
-.contact__wrapper .services__intro-graphic {
-  inset: unset;
+.contact__inner .decor-graphic {
+  inset: auto;
   top: 42%;
   left: 94%;
   transform: translate(-50%, -50%);
@@ -14,7 +14,7 @@
 }
 
 .contact__inner {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
 }

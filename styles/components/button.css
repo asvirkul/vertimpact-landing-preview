@@ -1,0 +1,37 @@
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 3.5rem;
+  padding: 0.9rem 1.75rem;
+  border: 1px solid var(--color-cta-bg);
+  border-radius: var(--border-radius-cta);
+  background: var(--color-cta-bg);
+  color: var(--color-cta-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-dr) ease,
+    border-color var(--transition-dr) ease,
+    color var(--transition-dr) ease,
+    box-shadow var(--transition-dr) ease,
+    transform var(--transition-dr) ease;
+}
+
+.button-primary__icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+  transition: transform 0.35s ease;
+}
+
+.button-primary:hover .button-primary__icon,
+.button-primary:focus-visible .button-primary__icon {
+  transform: translateX(2px);
+}

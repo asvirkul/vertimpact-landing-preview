@@ -28,26 +28,8 @@
 
 .hero__overlay {
   z-index: -1;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(0 0 0 / 0.08) 0%,
-      rgb(0 0 0 / 0.01) 30%,
-      rgb(0 0 0 / 0.08) 55%,
-      rgb(0 0 0 / 0.08) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgb(var(--color-forest-deep-rgb) / 0.1) 0%,
-      rgb(var(--color-forest-deep-rgb) / 0.2) 26%,
-      rgb(var(--color-forest-deep-rgb) / 0.3) 48%,
-      rgb(var(--color-forest-deep-rgb) / 0.6) 100%
-    ),
-    radial-gradient(
-      circle at 50% 38%,
-      rgb(var(--color-coastal-teal-rgb) / 0.2) 0%,
-      rgb(var(--color-coastal-teal-rgb) / 0) 32%
-    );
+  background: rgb(27 67 50 / 0.45);
+  mix-blend-mode: multiply;
 }
 
 .hero__text-wrapper {

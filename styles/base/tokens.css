@@ -69,6 +69,7 @@
 
   --z-index-header: 100;
   --header-height: 84px;
+  --z-index-max: 200;
   --header-shadow:
     0 1px 0 rgba(27, 67, 50, 0.04), 0 8px 20px rgba(14, 31, 25, 0.05);
 

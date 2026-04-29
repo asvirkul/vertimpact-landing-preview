@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./styles/sections/clients.css" />
     <link rel="stylesheet" href="./styles/sections/contact.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/back-to-top.css" />
+    <link rel="stylesheet" href="./styles/components/graphic.css" />
   </head>
   <body>
     <!-- Header -->
@@ -120,13 +122,13 @@
               <a href="#about" class="mobile-menu__link">About</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#clients" class="mobile-menu__link">Clients</a>
-            </li>
-            <li class="mobile-menu__item">
               <a href="#services" class="mobile-menu__link">Services</a>
             </li>
             <li class="mobile-menu__item">
               <a href="#why" class="mobile-menu__link">Why Vertimpact</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#clients" class="mobile-menu__link">Clients</a>
             </li>
             <li class="mobile-menu__item">
               <a href="#contact" class="mobile-menu__link">Contact</a>
@@ -159,7 +161,7 @@
             Vertimpact is a specialist advisory firm serving international
             investors across East Africa and the Indian Ocean rim.
           </p>
-          <a class="hero__cta" href="#">
+          <a class="hero__cta" href="#contact">
             <svg
               class="cta__icon"
               width="14"
@@ -309,20 +311,19 @@
               initial strategy through to long-term value creation.
             </p>
 
-            <div class="services__intro-graphic" aria-hidden="true">
+            <div class="decor-graphic" aria-hidden="true">
               <span
-                class="services__graphic-circle services__graphic-circle--1"
+                class="decor-graphic__circle decor-graphic__circle--1"
               ></span>
               <span
-                class="services__graphic-circle services__graphic-circle--2"
+                class="decor-graphic__circle decor-graphic__circle--2"
               ></span>
               <span
-                class="services__graphic-circle services__graphic-circle--3"
+                class="decor-graphic__circle decor-graphic__circle--3"
               ></span>
               <span
-                class="services__graphic-circle services__graphic-circle--4"
+                class="decor-graphic__circle decor-graphic__circle--4"
               ></span>
-              <span class="services__graphic-dot"></span>
             </div>
           </div>
 
@@ -863,20 +864,11 @@
               </button>
             </div>
           </form>
-          <div class="services__intro-graphic" aria-hidden="true">
-            <span
-              class="services__graphic-circle services__graphic-circle--1"
-            ></span>
-            <span
-              class="services__graphic-circle services__graphic-circle--2"
-            ></span>
-            <span
-              class="services__graphic-circle services__graphic-circle--3"
-            ></span>
-            <span
-              class="services__graphic-circle services__graphic-circle--4"
-            ></span>
-            <span class="services__graphic-dot"></span>
+          <div class="decor-graphic decor-graphic--services" aria-hidden="true">
+            <span class="decor-graphic__circle decor-graphic__circle--1"></span>
+            <span class="decor-graphic__circle decor-graphic__circle--2"></span>
+            <span class="decor-graphic__circle decor-graphic__circle--3"></span>
+            <span class="decor-graphic__circle decor-graphic__circle--4"></span>
           </div>
         </div>
       </section>
@@ -889,12 +881,12 @@
         <div class="footer__top">
           <div class="footer__brand">
             <a class="footer__logo" href="/" aria-label="Vertimpact home">
-              <span class="footer__logo-wordmark">Vertimpact</span>
+              <img
+                class="footer__logo-img"
+                src="./assets/images/footer_logo.svg"
+                alt=""
+              />
             </a>
-
-            <p class="footer__brand-text">
-              Advisory &amp; Impact Investment Services
-            </p>
           </div>
 
           <div class="footer__mandate">
@@ -907,7 +899,7 @@
             <span class="footer__kicker">Our mandate</span>
             <p class="footer__mandate-text">
               Bridging international capital and Africa's green economy from
-              East Africa to the Indian Ocean rim.
+              East Africa and the Indian Ocean rim.
             </p>
           </div>
         </div>
@@ -960,8 +952,28 @@
       </div>
     </footer>
 
-    <script src="./js/utils/dom.js"></script>
+    <!-- Button Back -->
+    <div class="button-back__wrapper hidden">
+      <button class="button-back">
+        <svg
+          viewBox="0 0 14 14"
+          fill="none"
+          stroke="rgba(255,255,255,0.7)"
+          stroke-width="0.8"
+        >
+          <path
+            d="M7 11 L7 3 M3 7 L7 3 L11 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Button Back -->
+
+    <script src="./js/utils/scroll.js"></script>
     <script src="./js/components/header.js"></script>
+    <script src="./js/components/backToTop.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

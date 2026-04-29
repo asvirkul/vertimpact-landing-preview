@@ -1,8 +1,8 @@
 (function (window, document) {
-    const selectors = {
-      header: "header",
-      burger: ".header__burger",
-      navLinks: 'a[href^="#"]',
+  const selectors = {
+    header: "header",
+    burger: ".header__burger",
+    navLinks: 'a[href^="#"]',
   };
 
   function setMenuState(button, isExpanded) {
@@ -10,44 +10,47 @@
     button.classList.toggle("active", isExpanded);
   }
 
+  function closeMobileMenu(header, burger) {
+    if (!header || !burger) {
+      return;
+    }
+
+    setMenuState(burger, false);
+    header.classList.remove("mobile-open");
+  }
+
   function initAnchorNavigation(header, burger) {
-  const links = document.querySelectorAll(selectors.navLinks);
+    const links = document.querySelectorAll(selectors.navLinks);
 
-  links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
 
-      if (!href || href === "#") {
-        return;
-      }
+        if (!href || href === "#") {
+          return;
+        }
 
-      const target = document.querySelector(href);
+        const target = document.querySelector(href);
 
-      if (!target) {
-        return;
-      }
+        if (!target) {
+          return;
+        }
 
-      event.preventDefault();
+        event.preventDefault();
 
-      const headerHeight = header.offsetHeight || 0;
-      const targetTop =
-        target.getBoundingClientRect().top + window.scrollY - headerHeight;
+        if (
+          window.Vertimpact &&
+          window.Vertimpact.scroll &&
+          typeof window.Vertimpact.scroll.scrollToTarget === "function"
+        ) {
+          window.Vertimpact.scroll.scrollToTarget(href);
+        }
 
-      window.scrollTo({
-        top: targetTop,
-        behavior: "smooth",
+        history.pushState(null, "", href);
+        closeMobileMenu(header, burger);
       });
-
-      history.pushState(null, "", href);
-
-      if (burger) {
-        setMenuState(burger, false);
-      }
-
-      header.classList.remove("mobile-open");
     });
-  });
-}
+  }
 
   function initHeaderMenu() {
     const header = document.querySelector(selectors.header);
@@ -70,8 +73,7 @@
         return;
       }
 
-      setMenuState(burger, false);
-      header.classList.remove("mobile-open");
+      closeMobileMenu(header, burger);
     });
 
     initAnchorNavigation(header, burger);
@@ -106,7 +108,6 @@
 
   window.addEventListener("scroll", setActiveLink);
   window.addEventListener("load", setActiveLink);
-
 
   window.Vertimpact = window.Vertimpact || {};
   window.Vertimpact.header = {

@@ -103,7 +103,6 @@
 .about__focus-text {
   max-width: 36rem;
   margin: 1.4rem 0 0;
-  font-size: var(--font-body);
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 400;
