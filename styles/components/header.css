@@ -21,6 +21,67 @@ header {
   height: 100%;
   margin: 0 auto;
 }
+#header-logo {
+  width: 100%;
+}
+.cls-1 {
+  fill: #426852;
+}
+
+.cls-2 {
+  fill: #76b48b;
+}
+
+.cls-3 {
+  fill: #2a4234;
+}
+#header-title {
+  will-change: transform, opacity;
+}
+
+#header-logo .cls-3,
+#header-logo .cls-2,
+#logo-title {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#header-logo .cls-1 {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.past-hero #header-logo .cls-3,
+body.past-hero #header-logo .cls-2 {
+  transform: translateY(1.8px);
+}
+
+body.past-hero #header-logo .cls-1 {
+  transform: translateY(-1.8px);
+}
+body.past-hero #logo-title {
+  transform: translateY(2px);
+}
+
+#logo-subtitle {
+  overflow: hidden;
+  max-height: 20px;
+  opacity: 1;
+  margin-top: 3px;
+  will-change: transform, opacity;
+  transform: translateY(0);
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.1s linear,
+    margin-top 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+body.past-hero #logo-subtitle {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  transform: translateY(-5px);
+}
+
 .header__logo {
   justify-self: start;
   max-width: 250px;

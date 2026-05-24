@@ -26,6 +26,20 @@
       behavior: "smooth",
     });
   }
+  
+  const hero = document.querySelector('.hero__wrapper');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      document.body.classList.toggle('past-hero', !entry.isIntersecting)
+    },
+    {
+      threshold: 0,
+      rootMargin: '-64px 0px 0px 0px' 
+    }
+  )
+
+  observer.observe(hero);
 
   window.Vertimpact = window.Vertimpact || {};
   window.Vertimpact.scroll = {
